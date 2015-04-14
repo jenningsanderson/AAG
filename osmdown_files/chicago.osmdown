@@ -1,0 +1,12 @@
+---
+###Analysis Window Information
+start_date: 2015-04-01
+end_date: 2015-04-30
+bbox:'-87.940101,41.643919,-87.523984,42.023022'
+
+###Where the data live
+baseurl: '../'
+www: '/data/www/chicago'
+---
+Chicago, Illinois
+=================
