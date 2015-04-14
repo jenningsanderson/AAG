@@ -9,9 +9,7 @@ database: 'boulder-history'
 #Analysis Window Information
 start_date: '2013-01-01'
 end_date:   '2014-12-31'
-
-#Bounding Box:
-bbox: '-105.3424072,39.946595,-105.1872253,40.0938316' #Expecting 4 parameters
+bbox: '-105.3424072,39.946595,-105.1872253,40.0938316'
 
 tags: none
 

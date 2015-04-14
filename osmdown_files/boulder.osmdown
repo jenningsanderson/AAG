@@ -1,19 +1,27 @@
 ---
-#Analysis Window Information
+###Analysis Window Information
 start_date: '2013-01-01'
 end_date:   '2014-12-31'
+bbox: '-105.3424072,39.946595,-105.1872253,40.0938316'
 
-#Where the data live
+###Where the data live
 baseurl: '../'
 www: '/data/www/boulder'
 ---
 
 Boulder, Colorado
 =================
-Boulder is a medium sized city on the Front Range of Colorado (wikipedia.org).
+The City of Boulder is located at the base of the foothills of the Rocky Mountains at an elevation of 5,430 feet (1,655 m). The city is 25 miles (40 km) northwest of Denver.
+
+The population of the Boulder, CO Metropolitan Statistical Area was 294,567 in 2010.
+
+Boulder is famous for its colorful Western history, being a choice destination for hippies in the late 1960s, and as home of the main campus of the University of Colorado, the state's largest university. Furthermore, the city of Boulder frequently acquires top rankings in health, well-being, quality of life, education and art. (http://en.wikipedia.org/wiki/Boulder,_Colorado)
 
 ```
 var x = {foo : 'bar'}
 ```
 
-#This title will reference foo = {{ x.foo }}
+#Summary
+
+
+## This title will reference foo = {{ x.foo }}
