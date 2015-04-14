@@ -2,7 +2,7 @@
 title: 'Chicago 2015'
 email: 'jennings.anderson@colorado.edu'
 
-pbf_file: /data/osm-files/history-latest.osm.pbf
+pbf_file: /data/osm-files/history-latest.osh.pbf
 database: chicago-2015
 
 #Analysis Window Information:
