@@ -1,0 +1,8 @@
+#User Information
+title: 'Chicago 2015'
+email: 'jennings.anderson@colorado.edu'
+
+pbf_file: history-latest.osm.pbf
+database: chicago-2015
+
+write_directory: '/data/www/chicago'

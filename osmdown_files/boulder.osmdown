@@ -1,0 +1,19 @@
+---
+#Analysis Window Information
+start_date: '2013-01-01'
+end_date:   '2014-12-31'
+
+#Where the data live
+baseurl: '../'
+www: '/data/www/boulder'
+---
+
+Boulder, Colorado
+=================
+Boulder is a medium sized city on the Front Range of Colorado (wikipedia.org).
+
+```
+var x = {foo : 'bar'}
+```
+
+#This title will reference foo = {{ x.foo }}
