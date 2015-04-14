@@ -2,12 +2,12 @@
 title: 'Chicago 2015'
 email: 'jennings.anderson@colorado.edu'
 
-pbf_file: history-latest.osm.pbf
+pbf_file: /data/osm-files/history-latest.osm.pbf
 database: chicago-2015
 
 #Analysis Window Information:
-start_date: 2015-04-01
-end_date:   2015-04-30
+start_date: '2015-04-01'
+end_date:   '2015-04-30'
 bbox: '-87.940101,41.643919,-87.523984,42.023022'
 
 write_directory: '/data/www/chicago'
@@ -19,7 +19,7 @@ Node Questions:
  - number_of_nodes_edited_by_experienced_mappers
  - mean_nodes_per_mapper
  - median_nodes_per_mapper
- 
+
 Way Questions:
  - new_ways_per_day
 
