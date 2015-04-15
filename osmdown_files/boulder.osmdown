@@ -1,4 +1,6 @@
 ---
+###Project Information
+title: 'Boulder 2013 - 2014'
 ###Analysis Window Information
 start_date: '2013-01-01'
 end_date:   '2014-12-31'
@@ -17,11 +19,45 @@ The population of the Boulder, CO Metropolitan Statistical Area was 294,567 in 2
 
 Boulder is famous for its colorful Western history, being a choice destination for hippies in the late 1960s, and as home of the main campus of the University of Colorado, the state's largest university. Furthermore, the city of Boulder frequently acquires top rankings in health, well-being, quality of life, education and art. (http://en.wikipedia.org/wiki/Boulder,_Colorado)
 
+{{ osmviz.block('summary') }}
+
+OSM Tags
+========
+This next section will load nodes and way information and learn about the tags they represent!
+
 ```
-var x = {foo : 'bar'}
+var ways = osmdata('/data/www/boulder/json/ways_x_day.json')
+var nodes = osmdata('/data/www/boulder/json/nodes_x_day.json')
+
+var wayTags = osmviz.helpers.topTags(ways)
+var nodeTags = osmviz.helpers.topTags(nodes)
+var tableOptions = {limit: 15, headers: ['Key', 'Total Count', 'Top 10 Values']}
+
+var way_table = osmviz.table(
+	_.collect(wayTags, function(x){
+		return [x.key, 
+		        x.values.length, 
+		        _.slice(_.collect(x.sortedValues, function(y){return y.value}), 0,10).join(', ')		        ]
+   }), tableOptions)
+
+var node_table = osmviz.table(
+	_.collect(nodeTags, function(x){
+		return [x.key, 
+		        x.values.length, 
+		        _.slice(_.collect(x.sortedValues, function(y){return y.value}), 0,10).join(', ')		        ]
+   }), tableOptions)
 ```
 
-#Summary
+#Tags for Ways (Roads & Buildings)
+{{ way_table }}
 
+#Tags for Nodes
+{{ node_table}}
 
-## This title will reference foo = {{ x.foo }}
+#Changesets
+{{ osmviz.block('changesets') }}
+
+As you can see in the above changeset diagram, blah blah blah blah.
+
+This is an analysis of OSM...
+
