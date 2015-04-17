@@ -7,7 +7,7 @@ database: chicago-2008
 
 #Analysis Window Information:
 start_date: '2008-04-01'
-end_date:   '2010-04-30'
+end_date:   '2009-04-30'
 bbox: '-87.940101,41.643919,-87.523984,42.023022'
 
 write_directory: '/data/www/chicago'
