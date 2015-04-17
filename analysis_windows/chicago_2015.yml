@@ -2,7 +2,7 @@
 title: 'Chicago 2015'
 email: 'jennings.anderson@colorado.edu'
 
-pbf_file: '/data/osm_files/history-latest.osh.pbf'
+pbf_file: '/data/osm_files/splitter_exports/north-america/illinois.osm.pbf'
 database: chicago-2015
 
 #Analysis Window Information:
@@ -12,6 +12,11 @@ bbox: '-87.940101,41.643919,-87.523984,42.023022'
 
 write_directory: '/data/www/chicago'
 
+
+#Configuration
+mem_only: true
+
+#Questions
 Node Questions:
  - total_nodes_edited
  - number_of_new_nodes

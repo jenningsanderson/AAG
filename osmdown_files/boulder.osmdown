@@ -19,8 +19,6 @@ The population of the Boulder, CO Metropolitan Statistical Area was 294,567 in 2
 
 Boulder is famous for its colorful Western history, being a choice destination for hippies in the late 1960s, and as home of the main campus of the University of Colorado, the state's largest university. Furthermore, the city of Boulder frequently acquires top rankings in health, well-being, quality of life, education and art. (http://en.wikipedia.org/wiki/Boulder,_Colorado)
 
-{{ osmviz.block('summary') }}
-
 OSM Tags
 ========
 This next section will load nodes and way information and learn about the tags they represent!
@@ -54,10 +52,9 @@ var node_table = osmviz.table(
 #Tags for Nodes
 {{ node_table}}
 
-#Changesets
-{{ osmviz.block('changesets') }}
+```
+var options = {}
+var lineChart = osmviz.linechart(wayTags,options)
+```
 
-As you can see in the above changeset diagram, blah blah blah blah.
-
-This is an analysis of OSM...
-
+{{ lineChart }}
