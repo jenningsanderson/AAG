@@ -1,14 +1,14 @@
 #User Information
-title: 'Haiti Earthquake 2010'
+title: '2010 Haiti Earthquake'
 email: 'jennings.anderson@colorado.edu'
 
 #Database Information
-pbf_file: '/data/osm_files/central-america.osh.pbf'
+pbf_file: '/data/osm_files/splitter_exports/central-america.osm.pbf'
 database: 'haiti-earthquake'
 
 #Analysis Window Information
-start_date: '2010-01-10'
-end_date:   '2010-02-10'
+start_date: '2010-01-01'
+end_date:   '2010-02-31'
 
 #Bounding Box:
 bbox: '-74.5532226563,17.8794313865,-71.7297363281,19.9888363024' #Expecting 4 parameters
@@ -19,7 +19,6 @@ write_directory: '/data/www/haiti-earthquake'
 
 
 #Questions for Analysis
-
 Node Questions:
  - total_nodes_edited
  - number_of_new_nodes
