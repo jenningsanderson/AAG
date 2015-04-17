@@ -14,7 +14,7 @@ write_directory: '/data/www/chicago'
 
 
 #Configuration
-mem_only: true
+mongo_only: true
 
 #Questions
 Node Questions:
