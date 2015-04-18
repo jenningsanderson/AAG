@@ -12,8 +12,6 @@ baseurl: '../'
 www: '/data/www/haiti-earthquake'
 ---
 
-2010 Haiti Earthquake
-
 OSM Tags
 ========
 This next section will load nodes and way information and learn about the tags they represent!
