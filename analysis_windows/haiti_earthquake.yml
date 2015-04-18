@@ -27,6 +27,10 @@ Node Questions:
  - mean_nodes_per_mapper
  - median_nodes_per_mapper
  - nodes_x_day
+ - top_new_node_tags
+
+Way Questions:
+ - top_new_way_tags
 
 Changeset Questions:
  - total_changesets_created
@@ -35,10 +39,10 @@ Changeset Questions:
  - number_of_changesets_by_new_mappers
  - number_of_changesets_by_experienced_mappers
 
- - average_changeset_area
- - average_changeset_node_density
- - median_changeset_node_density 		# This will need a threshold of 'interested sizes'
- - average_geographic_overlaps_per_changeset
+ # - average_changeset_area
+ # - average_changeset_node_density
+ # - median_changeset_node_density 		# This will need a threshold of 'interested sizes'
+ # - average_geographic_overlaps_per_changeset
 
 User Questions:
  - new_user_count

@@ -7,7 +7,7 @@ pbf_file: '/data/osm_files/north_america.osh.pbf'
 database: 'boulder-history'
 
 #Analysis Window Information
-start_date: '2013-01-01'
+start_date: '2014-01-01'
 end_date:   '2014-12-31'
 bbox: '-105.3424072,39.946595,-105.1872253,40.0938316'
 
@@ -18,31 +18,34 @@ write_directory: '/data/www/boulder'
 #Questions for Analysis
 
 Node Questions:
- - new_nodes_per_day
- - total_nodes_edited
- - number_of_new_nodes
- - number_of_nodes_edited_by_new_mappers
- - number_of_nodes_edited_by_experienced_mappers
- - mean_nodes_per_mapper
- - median_nodes_per_mapper
- - nodes_x_day
+ # - new_nodes_per_day
+ # - total_nodes_edited
+ # - number_of_new_nodes
+ # - number_of_nodes_edited_by_new_mappers
+ # - number_of_nodes_edited_by_experienced_mappers
+ # - mean_nodes_per_mapper
+ # - median_nodes_per_mapper
+ # - nodes_x_day
+
+ - top_new_node_tags
 
 Way Questions:
- - new_ways_per_day
- - ways_x_day
+ - top_new_way_tags
+#  - new_ways_per_day
+#  - ways_x_day
 
-Changeset Questions:
- - changesets_x_day
- - total_changesets_created
- - mean_changesets_per_mapper
- - median_changesets_per_mapper
- - number_of_changesets_by_new_mappers
- - number_of_changesets_by_experienced_mappers
+# Changeset Questions:
+#  - changesets_x_day
+#  - total_changesets_created
+#  - mean_changesets_per_mapper
+#  - median_changesets_per_mapper
+#  - number_of_changesets_by_new_mappers
+#  - number_of_changesets_by_experienced_mappers
 
-User Questions:
- - new_user_count
- - experienced_user_count
- - total_user_count
+# User Questions:
+#  - new_user_count
+#  - experienced_user_count
+#  - total_user_count
 
-Bbox Questions:
- - bbox_geojson_geometry
+# Bbox Questions:
+#  - bbox_geojson_geometry

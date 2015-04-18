@@ -23,38 +23,32 @@ OSM Tags
 ========
 This next section will load nodes and way information and learn about the tags they represent!
 
-```
-var ways = osmdata('/data/www/boulder/json/ways_x_day.json')
-var nodes = osmdata('/data/www/boulder/json/nodes_x_day.json')
-
-var wayTags = osmviz.helpers.topTags(ways)
-var nodeTags = osmviz.helpers.topTags(nodes)
-var tableOptions = {limit: 15, headers: ['Key', 'Total Count', 'Top 10 Values']}
-
-var way_table = osmviz.table(
-	_.collect(wayTags, function(x){
-		return [x.key, 
-		        x.values.length, 
-		        _.slice(_.collect(x.sortedValues, function(y){return y.value}), 0,10).join(', ')		        ]
-   }), tableOptions)
-
-var node_table = osmviz.table(
-	_.collect(nodeTags, function(x){
-		return [x.key, 
-		        x.values.length, 
-		        _.slice(_.collect(x.sortedValues, function(y){return y.value}), 0,10).join(', ')		        ]
-   }), tableOptions)
-```
-
-#Tags for Ways (Roads & Buildings)
-{{ way_table }}
-
-#Tags for Nodes
-{{ node_table}}
+{{ osmviz.block('tags')}}
 
 ```
-var options = {}
-var lineChart = osmviz.linechart(wayTags,options)
+//var ways = osmdata('/data/www/boulder/json/ways_x_day.json')
+//var nodes = osmdata('/data/www/boulder/json/nodes_x_day.json')
+
+//var wayTags = osmviz.helpers.topTags(ways)
+//var nodeTags = osmviz.helpers.topTags(nodes)
+//var tableOptions = {limit: 15, headers: ['Key', 'Total Count', 'Top 10 Values']}
+
+//var way_table = osmviz.table(
+//	_.collect(wayTags, function(x){
+//		return [x.key, 
+//		        x.values.length, 
+//		        _.slice(_.collect(x.sortedValues, function(y){return y.value}), 0,10).join(', //')		        ]
+//   }), tableOptions)
+
+//var node_table = osmviz.table(
+//	_.collect(nodeTags, function(x){
+//		return [x.key, 
+//		        x.values.length, 
+//		        _.slice(_.collect(x.sortedValues, function(y){return y.value}), 0,10).join(', ')		        ]
+//   }), tableOptions)
 ```
 
-{{ lineChart }}
+```
+//var options = {}
+//var lineChart = osmviz.linechart(wayTags,options)
+```
