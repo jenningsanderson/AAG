@@ -12,6 +12,8 @@ baseurl: '../'
 www: '/data/www/haiti-earthquake'
 ---
 
+OSM Activity: 1 month after The 2010 Haiti Earthquake
+======================================================================================
 
 {{ osmviz.block('summary') }}
 
