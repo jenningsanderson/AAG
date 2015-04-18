@@ -20,24 +20,31 @@ write_directory: '/data/www/haiti-earthquake'
 
 #Questions for Analysis
 Node Questions:
- - total_nodes_edited
- - number_of_new_nodes
- - number_of_nodes_edited_by_new_mappers
- - number_of_nodes_edited_by_experienced_mappers
- - mean_nodes_per_mapper
- - median_nodes_per_mapper
- - nodes_x_day
- - top_new_node_tags
+ # - total_nodes_edited
+ # - number_of_new_nodes
+ # - number_of_nodes_edited_by_new_mappers
+ # - number_of_nodes_edited_by_experienced_mappers
+ # - mean_nodes_per_mapper
+ # - median_nodes_per_mapper
+ # - nodes_x_day
+ # - top_new_node_tags
 
 Way Questions:
- - top_new_way_tags
+ # - top_new_way_tags
 
 Changeset Questions:
- - total_changesets_created
- - mean_changesets_per_mapper
- - median_changesets_per_mapper
- - number_of_changesets_by_new_mappers
- - number_of_changesets_by_experienced_mappers
+ # - total_changesets_created
+ # - mean_changesets_per_mapper
+ # - median_changesets_per_mapper
+ # - number_of_changesets_by_new_mappers
+ # - number_of_changesets_by_experienced_mappers
+
+ - changesets_x_day
+#  - total_changesets_created
+#  - mean_changesets_per_mapper
+#  - median_changesets_per_mapper
+#  - number_of_changesets_by_new_mappers
+#  - number_of_changesets_by_experienced_mappers
 
  # - average_changeset_area
  # - average_changeset_node_density

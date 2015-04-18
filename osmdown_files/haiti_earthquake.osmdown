@@ -12,8 +12,13 @@ baseurl: '../'
 www: '/data/www/haiti-earthquake'
 ---
 
-OSM Tags
-========
-This next section will load nodes and way information and learn about the tags they represent!
 
-{{ osmviz.block('tags')}}
+{{ osmviz.block('summary') }}
+
+
+
+{{ osmviz.block('changesets') }}
+
+
+
+{{ osmviz.block('tags') }}
