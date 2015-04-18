@@ -17,28 +17,30 @@ write_directory: '/data/www/chicago'
 
 #Questions
 Node Questions:
- - total_nodes_edited
- - number_of_new_nodes
- - number_of_nodes_edited_by_new_mappers
- - number_of_nodes_edited_by_experienced_mappers
- - mean_nodes_per_mapper
- - median_nodes_per_mapper
 
-Way Questions:
- - new_ways_per_day
+ - "nodes_x_day(step: 7, constraints: {version : {'$gt' : 1}})"
+#  - total_nodes_edited
+#  - number_of_new_nodes
+#  - number_of_nodes_edited_by_new_mappers
+#  - number_of_nodes_edited_by_experienced_mappers
+#  - mean_nodes_per_mapper
+#  - median_nodes_per_mapper
 
-Changeset Questions:
- - changesets_x_day
- - total_changesets_created
- - mean_changesets_per_mapper
- - median_changesets_per_mapper
- - number_of_changesets_by_new_mappers
- - number_of_changesets_by_experienced_mappers
+# Way Questions:
+#  - new_ways_per_day
 
-User Questions:
- - new_user_count
- - experienced_user_count
- - total_user_count
+# Changeset Questions:
+#  - changesets_x_day
+#  - total_changesets_created
+#  - mean_changesets_per_mapper
+#  - median_changesets_per_mapper
+#  - number_of_changesets_by_new_mappers
+#  - number_of_changesets_by_experienced_mappers
 
-Bbox Questions:
- - bbox_geojson_geometry
+# User Questions:
+#  - new_user_count
+#  - experienced_user_count
+#  - total_user_count
+
+# Bbox Questions:
+#  - bbox_geojson_geometry

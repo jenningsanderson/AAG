@@ -18,6 +18,8 @@ write_directory: '/data/www/boulder'
 #Questions for Analysis
 
 Node Questions:
+ - "nodes_x_day(step: 7, constraints: {'version' => {'$gt' => 1}})"
+
  # - new_nodes_per_day
  # - total_nodes_edited
  # - number_of_new_nodes

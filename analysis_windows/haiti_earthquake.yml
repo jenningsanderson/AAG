@@ -30,6 +30,11 @@ Node Questions:
  # - top_new_node_tags
  - new_nodes_per_day
 
+
+ - 'nodes_x_day(constraints: {version:1})'
+
+ - "nodes_x_day(step: 7, constraints: {version : {'$gt' : 1}})"
+
 Way Questions:
  # - top_new_way_tags
  - new_ways_per_day
