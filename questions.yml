@@ -1,0 +1,59 @@
+#Questions for Analysis
+Node Questions:
+# Simple & Return Numbers
+ - total_nodes_edited
+ - number_of_new_nodes
+ - mean_nodes_per_mapper
+ - median_nodes_per_mapper
+
+# More Complex & Return Objects
+ - nodes_x_day
+ - nodes_x_month
+
+ - "nodes_x_day(step: 7, constraints: {'version' => {'$gt' => 1}})"
+
+ - new_nodes_per_day
+
+
+
+
+User Questions:
+ - experienced_user_count
+ - total_user_count
+ - new_user_count
+
+
+More Node Questions:
+ - number_of_nodes_edited_by_new_mappers
+ - number_of_nodes_edited_by_experienced_mappers
+
+ - top_new_node_tags
+
+
+
+
+
+
+ 
+
+
+Way Questions:
+ - top_new_way_tags
+ - new_ways_per_day
+ - ways_x_day
+
+# Changeset Questions:
+ - changesets_x_day
+ - total_changesets_created
+ - mean_changesets_per_mapper
+ - median_changesets_per_mapper
+ - number_of_changesets_by_new_mappers
+ - number_of_changesets_by_experienced_mappers
+
+# User Questions:
+ - new_user_count
+ - experienced_user_count
+ - total_user_count
+
+# Bbox Questions:
+ - bbox_geojson_geometry
