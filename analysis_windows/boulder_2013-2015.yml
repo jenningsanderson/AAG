@@ -14,11 +14,24 @@ write_directory: '/data/www/boulder'
 
 #Questions Below
 User Questions:
+ - experienced_user_count
+ - total_user_count
  - new_user_count
 
 Node Questions:
+ - total_nodes_edited
+ - number_of_new_nodes
+ - mean_nodes_per_mapper
+ - median_nodes_per_mapper
+ - top_new_node_tags
  - nodes_x_day
- - nodes_x_year
- - "nodes_x_day(step: 7, constraints: {'version' => {'$gt' => 1}})"
- - new_nodes_per_day
- - top_node_tags
+ - nodes_x_day(step: 7)
+ - "nodes_x_day(constraints: {'version' => {'$gt' => 1}})"
+ - number_of_nodes_edited_by_new_mappers
+
+Way Questions:
+ - top_new_way_tags
+
+Changeset Questions:
+ - changesets_x_day
+ - mean_changesets_per_mapper

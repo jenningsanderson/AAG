@@ -20,10 +20,32 @@ The population of the Boulder, CO Metropolitan Statistical Area was 294,567 in 2
 Boulder is famous for its colorful Western history, being a choice destination for hippies in the late 1960s, and as home of the main campus of the University of Colorado, the state's largest university. Furthermore, the city of Boulder frequently acquires top rankings in health, well-being, quality of life, education and art. (http://en.wikipedia.org/wiki/Boulder,_Colorado)
 
 #Summary
+
 {{ osmviz.block('summary') }}
 
+
+```
+var all_mappers = _.values(
+	osmdata("/data/www/boulder/json/total_user_count.json")
+	)[0]
+
+var new_mappers = _.values(
+	osmdata("/data/www/boulder/json/new_user_count.json")
+	)[0]
+
+var exp_mappers = _.values(
+	osmdata("/data/www/boulder/json/experienced_user_count.json")
+	)[0]
+```
+
+During this period, there were {{ all_mappers }} total mappers.  {{ new_mappers }} users created their OSM account during this time period of analysis and {{ exp_mappers }} were experienced mappers, having created their account before this analysis window.
+
+
 #Changesets
+
 {{ osmviz.block('changesets') }}
+
+
 
 ```
 var changesetsByExpMappers = _.values(osmdata('/data/www/boulder/json/number_of_changesets_by_experienced_mappers.json'))[0]
@@ -40,3 +62,43 @@ There is an average of {{ avgChangesetsPerMapper }} changesets per mapper.
 #Tags
 
 {{ osmviz.block('tags')}}
+
+
+#Notes
+```
+
+var limit = 5
+
+var notes_geo = osmdata('/data/www/boulder/json/notes_geojson.json')
+
+var options = {
+	name:'notes_map',
+	data: notes_geo,
+	height: '400px',
+	width: '45%',
+	padding: '50',
+	popupFormat: 'comments',
+	popupContent: 'comments'
+}
+
+data_small = {type: "FeatureCollection", features: notes_geo.features.slice(0,limit)}
+
+var options2 = {
+	name:'notes_map_small',
+	data: data_small,
+	height: '400px',
+	width: '45%',
+	padding: '50',
+	popupFormat: 'comments',
+	popupContent: 'comments'
+}
+
+var notes_map = osmviz.map('popup',options)
+var notes_map_small = osmviz.map('popup', options2)
+```
+
+
+{{ notes_map }}
+
+Just the first {{limit}} Notes:
+{{ notes_map_small }}

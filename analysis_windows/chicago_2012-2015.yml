@@ -3,16 +3,17 @@ title: 'Chicago 2015'
 email: 'jennings.anderson@colorado.edu'
 
 pbf_file: '/data/osm_files/splitter_exports/north-america/illinois.osm.pbf'
-database: chicago-2012-2015
+database: chicago-2013-2015
 
 #Analysis Window Information:
-start_date: '2012-01-01'
+start_date: '2013-01-01'
 end_date:   '2015-03-31'
 bbox: '-87.940101,41.643919,-87.523984,42.023022'
 
 write_directory: '/data/www/chicago'
 
 not_complete: true
+mongo_only: true
 
 #Questions
 Node Questions:
