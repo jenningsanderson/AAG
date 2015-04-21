@@ -21,3 +21,4 @@ Node Questions:
  - nodes_x_year
  - "nodes_x_day(step: 7, constraints: {'version' => {'$gt' => 1}})"
  - new_nodes_per_day
+ - top_node_tags

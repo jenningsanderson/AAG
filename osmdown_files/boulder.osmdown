@@ -17,13 +17,54 @@ The City of Boulder is located at the base of the foothills of the Rocky Mountai
 
 The population of the Boulder, CO Metropolitan Statistical Area was 294,567 in 2010.
 
-Boulder is famous for its colorful Western history, being a choice destination for hippies in the late 1960s, and as home of the main campus of the University of Colorado, the state's largest university. Furthermore, the city of Boulder frequently acquires top rankings in health, well-being, quality of life, education and art. (http://en.wikipedia.org/wiki/Boulder,_Colorado)
+Boulder is famous for its colorful Western history, being a choice destination for hippies in the late 1960s, and as home of the main campus of the University of Colorado, the state's largest university. Furthermore, the city of Boulder frequently acquires top rankings in health, well-being, quality of life, education and art. [Boulder Wikipedia](http://en.wikipedia.org/wiki/Boulder,_Colorado)
 
-OSM Tags
-========
-This next section will load nodes and way information and learn about the tags they represent!
+```
+var test = 5
+```
+
+#Summary
+
+{{osmviz.block('summary')}}
+
+
+```
+var all_mappers = _.values(osmdata("/data/www/boulder/json/total_user_count.json"))[0]
+var new_mappers = _.values(osmdata("/data/www/boulder/json/new_user_count.json"))[0]
+var exp_mappers = _.values(osmdata("/data/www/boulder/json/experienced_user_count.json"))[0]
+```
+
+During this period, there were {{ all_mappers }} total mappers.  {{ new_mappers }} users created their OSM account during this time period of analysis and {{ exp_mappers }} were experienced mappers, having created their account before this analysis window.
+
+
+#Changesets
+
+{{ osmviz.block('changesets') }}
+
+
+
+```
+var changesetsByExpMappers = _.values(osmdata('/data/www/boulder/json/number_of_changesets_by_experienced_mappers.json'))[0]
+
+var changesetsByNewMappers = _.values(osmdata('/data/www/boulder/json/number_of_changesets_by_new_mappers.json'))[0]
+
+var avgChangesetsPerMapper = osmdata('/data/www/boulder/json/mean_changesets_per_mapper.json')["Mean Changesets Per Mapper"].toFixed(2)
+```
+
+Experienced users contributed {{ changesetsByExpMappers }} changesets while new mappers created {{ changesetsByNewMappers }} changesets.
+
+There is an average of {{ avgChangesetsPerMapper }} changesets per mapper.
+
+#Tags
 
 {{ osmviz.block('tags')}}
+
+
+
+
+
+
+
 
 ```
 //var ways = osmdata('/data/www/boulder/json/ways_x_day.json')
