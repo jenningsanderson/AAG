@@ -13,14 +13,14 @@ www: '/data/www/haiti-earthquake'
 ---
 
 OSM Activity: 1 month after The 2010 Haiti Earthquake
-======================================================================================
+=====================================================================================
 
+#Summary
 {{ osmviz.block('summary') }}
 
 
-
+#Changesets
 {{ osmviz.block('changesets') }}
 
-
-
+#Tags per Nodes/Ways
 {{ osmviz.block('tags') }}
