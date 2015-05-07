@@ -1,0 +1,14 @@
+---
+start_date: 2015-04-28 08:00:00.000000000 -06:00
+end_date: 2015-04-28 09:00:00.000000000 -06:00
+bbox: "-105.3424072,39.946595,-105.1872253,40.0938316"
+title: 'Boulder, CO OSM History: 2013 & 2014'
+email: jennings.anderson@colorado.edu
+pbf_file: "/data/osm_files/splitter_exports/north-america.osm.pbf"
+database: boulder-history
+write_directory: "/data/www/boulder/realtime/2015_4_28_8"
+realtime_step: 1
+User Questions:
+- all_contributors_with_geometry
+Node Questions:
+- nodes_x_day

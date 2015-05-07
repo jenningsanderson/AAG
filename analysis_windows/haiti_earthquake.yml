@@ -15,51 +15,40 @@ bbox: '-74.5532226563,17.8794313865,-71.7297363281,19.9888363024' #Expecting 4 p
 
 write_directory: '/data/www/haiti-earthquake'
 
+User Questions:
+ - experienced_user_count
+ - total_user_count
+ - new_user_count
 
-#Questions for Analysis
+
 Node Questions:
- # - total_nodes_edited
- # - number_of_new_nodes
- # - number_of_nodes_edited_by_new_mappers
- # - number_of_nodes_edited_by_experienced_mappers
- # - mean_nodes_per_mapper
- # - median_nodes_per_mapper
- # - nodes_x_day
- # - top_new_node_tags
- - new_nodes_per_day
+# Simple & Return Numbers
+ - total_nodes_edited
+ - number_of_new_nodes
+ - mean_nodes_per_mapper
+ - median_nodes_per_mapper
+ - top_new_node_tags
 
-
- - 'nodes_x_day(constraints: {version:1})'
-
- - "nodes_x_day(step: 7, constraints: {version : {'$gt' : 1}})"
+# Compound questions
+ - number_of_nodes_edited_by_new_mappers
+ - number_of_nodes_edited_by_experienced_mappers
 
 Way Questions:
- # - top_new_way_tags
+ - top_new_way_tags
+ - ways_x_day
  - new_ways_per_day
 
-# Changeset Questions:
- # - total_changesets_created
- # - mean_changesets_per_mapper
- # - median_changesets_per_mapper
- # - number_of_changesets_by_new_mappers
- # - number_of_changesets_by_experienced_mappers
+Changeset Questions:
+ - changesets_x_day
+ - total_changesets_created
+ - mean_changesets_per_mapper
+ - median_changesets_per_mapper
+ - number_of_changesets_by_new_mappers
+ - number_of_changesets_by_experienced_mappers
 
- # - changesets_x_day
-#  - total_changesets_created
-#  - mean_changesets_per_mapper
-#  - median_changesets_per_mapper
-#  - number_of_changesets_by_new_mappers
-#  - number_of_changesets_by_experienced_mappers
 
- # - average_changeset_area
- # - average_changeset_node_density
- # - median_changeset_node_density 		# This will need a threshold of 'interested sizes'
- # - average_geographic_overlaps_per_changeset
+Bbox Questions:
+ - bbox_geojson_geometry
 
-# User Questions:
-#  - new_user_count
-#  - experienced_user_count
-#  - total_user_count
 
-# Bbox Questions:
-#  - bbox_geojson_geometry
+## End of Sample Questions
